@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZamZam Parfumerie – Parfuma Arab</title>
+  <meta name="description" content="Parfuma arab nga Lattafa, Afnan, Alhambra dhe mbushje nga brandet më të njohura botërore." />
+  <link rel="icon" href="assets/images/logo.jpg" type="image/jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <span>Dërgesa në Maqedoni & Kosovë</span>
+    <span>WhatsApp / Viber · +389 70 962 702</span>
+  </div>
+
+  <header class="header">
+    <a href="#home" class="logo">
+      <img src="assets/images/logo.jpg" alt="ZamZam Parfumerie" class="logo-img" />
+      <span class="logo-text">
+        <strong>ZamZam</strong>
+        <small>Parfumerie</small>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#home">Kryefaqja</a>
+      <a href="#brendet">Brendet</a>
+      <a href="#produkte">Produktet</a>
+      <a href="#mbushje">Mbushje</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="cart-btn" id="cartBtn" aria-label="Shporta">
+        <span class="cart-icon">🛍</span>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-content">
+      <img src="assets/images/logo.jpg" alt="" class="hero-logo" />
+      <p class="brand-signal">ZamZam Parfumerie</p>
+      <h1>Parfuma arab.<br /><em>Aroma që mbetet.</em></h1>
+      <p class="hero-text">
+        Lattafa, Afnan, Alhambra dhe më shumë — plus mbushje nga brandet më të njohura botërore.
+      </p>
+      <div class="hero-cta">
+        <a href="#produkte" class="btn btn-gold">Shiko koleksionin</a>
+        <a href="https://wa.me/38970962702" class="btn btn-ghost" target="_blank" rel="noopener">Porosit në WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Lattafa</span><span>·</span>
+      <span>Afnan</span><span>·</span>
+      <span>Alhambra</span><span>·</span>
+      <span>Armaf</span><span>·</span>
+      <span>Mbushje Premium</span><span>·</span>
+      <span>Lattafa</span><span>·</span>
+      <span>Afnan</span><span>·</span>
+      <span>Alhambra</span><span>·</span>
+      <span>Armaf</span><span>·</span>
+      <span>Mbushje Premium</span><span>·</span>
+    </div>
+  </section>
+
+  <section class="section" id="brendet">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Brendet</p>
+        <h2>Arabike & luksoze</h2>
+      </div>
+      <div class="brands">
+        <article class="brand-card">
+          <img src="https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Lattafa" loading="lazy" />
+          <div class="brand-info"><h3>Lattafa</h3><p>Aroma orientale të forta</p></div>
+        </article>
+        <article class="brand-card">
+          <img src="https://images.pexels.com/photos/1190829/pexels-photo-1190829.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Afnan" loading="lazy" />
+          <div class="brand-info"><h3>Afnan</h3><p>Cilësi premium arabe</p></div>
+        </article>
+        <article class="brand-card">
+          <img src="https://images.pexels.com/photos/1961798/pexels-photo-1961798.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Alhambra" loading="lazy" />
+          <div class="brand-info"><h3>Alhambra</h3><p>Inspirime luksoze</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="produkte">
+    <div class="container">
+      <div class="section-head light">
+        <p class="eyebrow">Dyqani</p>
+        <h2>Produktet e zgjedhura</h2>
+        <div class="filters" id="filters">
+          <button class="filter-btn active" data-filter="all">Të gjitha</button>
+          <button class="filter-btn" data-filter="arab">Parfuma arab</button>
+          <button class="filter-btn" data-filter="mbushje">Mbushje</button>
+          <button class="filter-btn" data-filter="set">Sete</button>
+        </div>
+      </div>
+      <div class="products" id="products"></div>
+    </div>
+  </section>
+
+  <section class="section refill" id="mbushje">
+    <div class="container refill-grid">
+      <div class="refill-visual">
+        <img src="https://images.pexels.com/photos/5632397/pexels-photo-5632397.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Mbushje parfumi" loading="lazy" />
+      </div>
+      <div class="refill-text">
+        <p class="eyebrow">Shërbim special</p>
+        <h2>Parfuma me mbushje</h2>
+        <p>
+          Sjellim mbushje nga brandet më të njohura botërore — më ekonomik, e njëjta aromë.
+          Na shkruani në WhatsApp për listën aktuale.
+        </p>
+        <a href="https://wa.me/38970962702?text=Pershendetje!%20Dua%20info%20per%20mbushje%20parfumi." class="btn btn-gold" target="_blank" rel="noopener">Pyet për mbushje</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="kontakt">
+    <div class="container">
+      <div class="section-head light">
+        <p class="eyebrow">Kontakt</p>
+        <h2>Porosit lehtësisht</h2>
+      </div>
+      <div class="contact-grid">
+        <a class="contact-card" href="https://wa.me/38970962702" target="_blank" rel="noopener">
+          <span>WhatsApp</span>
+          <strong>+389 70 962 702</strong>
+          <p>Porosi & këshilla aromash</p>
+        </a>
+        <a class="contact-card" href="viber://chat?number=%2B38970962702">
+          <span>Viber</span>
+          <strong>+389 70 962 702</strong>
+          <p>Kontakt i shpejtë</p>
+        </a>
+        <a class="contact-card" href="https://instagram.com/zamzam.parfumerie" target="_blank" rel="noopener">
+          <span>Instagram</span>
+          <strong>@zamzam.parfumerie</strong>
+          <p>Shiko aromë të reja</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/images/logo.jpg" alt="" />
+        <div>
+          <strong>ZamZam Parfumerie</strong>
+          <p>Parfuma arab · Mbushje premium</p>
+        </div>
+      </div>
+      <p class="pitch-note">Demo e-commerce · HTML / CSS / JS</p>
+    </div>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-head">
+      <h3>Shporta</h3>
+      <button id="closeCart" aria-label="Mbyll">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-foot">
+      <div class="cart-total">
+        <span>Totali</span>
+        <strong id="cartTotal">0 den</strong>
+      </div>
+      <a id="whatsappOrder" class="btn btn-gold btn-block" href="#" target="_blank" rel="noopener">Porosit në WhatsApp</a>
+      <p class="cart-hint">Demo — porosia dërgohet si mesazh WhatsApp.</p>
+    </div>
+  </aside>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
